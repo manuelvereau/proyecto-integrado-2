@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./js/adminGuard.js"></script>
+    <title>Eco Carnes</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Noto+Serif:wght@300&family=Oswald:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="banner">
+
+        <div class="capa">
+            
+            <header class="main-header">
+
+                <nav class="main-nav">
+
+                <a href="./index.html"> <img src="./assets/img/logo.png" class="logo-img" alt="logo"></a>
+
+                <input class="input-check" type="checkbox" id="check-menu">
+                <label class="burger-menu" for="check-menu">
+                <i class="fa-solid fa-bars"></i>
+                </label>
+
+
+                <ul class="nav-items" id="header-nav">
+                    <li><a class="header-link" href="./index.html">Inicio</a></li>
+                    <li><a class="header-link" href="#productos">Productos</a></li>
+                    <li><a class="header-link" href="./pages/registro.html">Registro</a></li>
+                    <li><a class="header-link" href="./pages/contacto.html">Contacto</a></li>
+                    <li><a class="header-link" href="./pages/nosotros.html">Nosotros</a></li>
+                </ul>
+
+                <div class="user" id="header-user">
+                    <div class="user-action"> </div> 
+
+                    <div class="user-name">
+
+                        <i class="fa-regular fa-user"></i>
+
+                    </div>
+                    
+                </div>
+
+                </nav>
+
+            </header>
+
+            <section class="text-banner">
+
+                <div class="text-title">  <h1>Eco Carnes</h1></div>
+
+                <div class="text-info"> <p>TODO TIPO DE CORTES DE PRIMERA CALIDAD</p> </div>
+
+                <div> 
+                    <a href="#productos">
+                    <button class="btn-banner">NUESTROS PRODUCTOS<button>
+                    </a>
+                </div>
+
+            </section>
+        </div>  
+
+        <a name="productos"></a>
+        <main class="main-container">
+            <h1 class="text-main">NUESTROS PRODUCTOS</h1>
+            <section class="card-container">
+
+                <!-- <div class="card">
+
+                    <div class="img-card">
+                        <img src="./assets/img/bife-de-chorizo.jpg" alt="bife de chorizo" class="img-product">
+                        <h4 class="fecha">03 / 09 / 2023</h4>
+
+                    </div>
+
+                    <div class="text-card">
+                        <div class="title-card">
+                            <h1>Bife De Chorizo</h1>
+                            <p class="description-card">
+                                Corte del cuarto trasero, muy reconocido por su sabor y bajo contenido de grasa. El más
+                                elegido para preparar al horno, también permite su cocción en la parrilla y plancha.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="precio">
+                        <h2>4.999</h2>
+                        <h5>Por Kg</h5>
+                    </div>
+
+                    <div class="btn-card">
+                        <button class="btn-mas">ver más</button>
+                        <button class="btn-comprar">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="img-card">
+                        <img src="./assets/img/vacio_2.jpg" alt="vacio" class="img-product">
+                        <h4 class="fecha">03 / 09 / 2023</h4>
+
+                    </div>
+
+                    <div class="text-card">
+                        <div class="title-card">
+                            <h1>Vacio</h1>
+                            <p class="description-card">
+                                Uno de los tres cortes parrilleros preferidos por el consumidor argentino, junto al
+                                asado y al matambre. Sirve también para hornear por su gran aprovechamiento.
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="precio">
+                        <h2>$ 3.990</h2>
+                        <h5>Por Kg</h5>
+                    </div>
+
+                    <div class="btn-card">
+                        <button class="btn-mas">ver más</button>
+                        <button class="btn-comprar">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="img-card">
+                        <img src="./assets/img/colita_1.jpg" alt="colita de cuadril" class="img-product">
+                        <h4 class="fecha">03 / 09 / 2023</h4>
+
+                    </div>
+
+                    <div class="text-card">
+                        <div class="title-card">
+                            <h1>Colita De Cuadril</h1>
+                            <p class="description-card">
+                                Corte del cuarto trasero, muy reconocido por su sabor y bajo contenido de grasa. El más
+                                elegido para preparar al horno, también permite su cocción en la parrilla y plancha.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="precio">
+                        <h2>$ 5200</h2>
+                        <h5>Por Kg</h5>
+                    </div>
+
+                    <div class="btn-card">
+                        <button class="btn-mas">ver más</button>
+                        <button class="btn-comprar">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="img-card">
+                        <img src="./assets/img/cuadril_4.jpg" alt="bife de chorizo" class="img-product">
+                        <h4 class="fecha">03 / 09 / 2023</h4>
+
+                    </div>
+
+                    <div class="text-card">
+                        <div class="title-card">
+                            <h1>Cuadril</h1>
+                            <p class="description-card">
+                                Por su versatilidad y terneza es un corte ideal para preparar bifes y recetas al horno.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="precio">
+                        <h2>$ 3.900</h2>
+                        <h5>Por Kg</h5>
+                    </div>
+
+                    <div class="btn-card">
+                        <button class="btn-mas">ver más</button>
+                        <button class="btn-comprar">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="img-card">
+                        <img src="./assets/img/entra_a_1.jpg" alt="Entraña" class="img-product">
+                        <h4 class="fecha">03 / 09 / 2023</h4>
+
+                    </div>
+
+                    <div class="text-card">
+                        <div class="title-card">
+                            <h1>Entraña</h1>
+                            <p class="description-card">
+                                Especial para la parrilla. Su piel, crocante tras el grillado, la hace muy sabrosa. Peso
+                                estimado por pieza: 500 grs
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="precio">
+                        <h2>$ 5.990</h2>
+                        <h5>Por Kg</h5>
+                    </div>
+
+                    <div class="btn-card">
+                        <button class="btn-mas">ver más</button>
+                        <button class="btn-comprar">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="img-card">
+                        <img src="./assets/img/milanesa.jpg" alt="milanesas de carne" class="img-product">
+                        <h4 class="fecha">03 / 09 / 2023</h4>
+
+                    </div>
+
+                    <div class="text-card">
+                        <div class="title-card">
+                            <h1>Milanesas De Carne</h1>
+                            <p class="description-card">
+                                Se usan los cortes adecuados para cada tipo de milanesa. La carne es desgrasada, sin
+                                nervios y se usan huevos frescos y una cantidad de pan rallado acorde con la preparación
+                                hogareña de calidad.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="precio">
+                        <h2>$ 2.990</h2>
+                        <h5>Por Kg</h5>
+                    </div>
+
+                    <div class="btn-card">
+                        <button class="btn-mas">ver más</button>
+                        <button class="btn-comprar">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="img-card">
+                        <img src="./assets/img/osobuco_1.jpg" alt="osobuco" class="img-product">
+                        <h4 class="fecha">03 / 09 / 2023</h4>
+
+                    </div>
+
+                    <div class="text-card">
+                        <div class="title-card">
+                            <h1>Osobuco</h1>
+                            <p class="description-card">
+                                Favorito en la cocina argentina para pucheros y guisos. La gastronomía gourmet lo adopta
+                                para platos en boga, valorizándolo.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="precio">
+                        <h2>$ 2.700</h2>
+                        <h5>Por Kg</h5>
+                    </div>
+
+                    <div class="btn-card">
+                        <button class="btn-mas">ver más</button>
+                        <button class="btn-comprar">COMPRAR</button>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="img-card">
+                        <img src="./assets/img/picada.jpg" alt="carne picada" class="img-product">
+                        <h4 class="fecha">03 / 09 / 2023</h4>
+
+                    </div>
+
+                    <div class="text-card">
+                        <div class="title-card">
+                            <h1>Picada Premium</h1>
+                            <p class="description-card">
+                                Picada vacuna desgrasada
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="precio">
+                        <h2>$ 3.200</h2>
+                        <h5>Por Kg</h5>
+                    </div>
+
+                    <div class="btn-card">
+                        <button class="btn-mas">ver más</button>
+                        <button class="btn-comprar">COMPRAR</button>
+                    </div>
+                </div> -->
+
+            </section>
+            <section class="feature-section">
+                <div class="feature">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h4>Compra 100% Segura</h4>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-truck"></i>
+                    <h4>Envios Gratis</h4>
+                </div>
+                <div class="feature">
+                    <i class="fa-solid fa-tag"></i>
+                    <h4>Descuentos Semanales</h4>
+                </div>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="redes">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="datos-footer">
+                <p>Eco Carnes , Carnicería.</p>
+                <p>Lunes a Sábados de 10 a 20 hs. <br>
+                    Domingos de 10 a 16 hs.</p>
+                <p>WhatsApp +54 9 11 9999-9999</p>
+            </div>
+            <div class="pagos">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+            </div>
+        </footer>
+        <script src="/js/formatDate.js"></script>
+        <script src="/js/datainicial.js"></script>
+        <script src="/js/product-index.js"></script>
+        <script src="/js/header.js"></script>
+        <!-- <script src="/js/product.js"></script> -->
+</body>
+
+</html>

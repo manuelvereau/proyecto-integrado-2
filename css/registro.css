@@ -1,0 +1,116 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+.banner-registro{
+    background-image: url(../assets/wallpaperbetter.com_1920x1080\ \(8\).jpg);
+}
+
+.main-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+.container-registro{
+    width: 100%;
+    max-width: 800px;
+    background-color: rgb(0,0 ,0,0.5);
+    margin-top:30px;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px #a55b16;
+}
+.title-form{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: rgb(201, 85, 18);
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px rgb(201, 85, 18);
+}
+.user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.input-grupo:nth-child(2n){
+    justify-content: end;
+}
+
+.input-grupo{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.input-grupo label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+    color: rgb(201, 85, 18);
+}
+.input-grupo input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    padding: 0 10px;
+}
+.observaciones{
+    display: flex;
+    flex-direction: column;
+    color: rgb(201, 85, 18);
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.observaciones label{
+    border-bottom: 1px solid rgb(201, 85, 18);
+    margin-bottom: 10px;
+}
+
+.btn-registro{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 20px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(8, 7, 7);
+    background-color: rgb(107, 70, 28);
+}
+.btn-registro:hover{
+    background-color: rgb(201, 85, 18);
+}
+
+@media screen and (width < 800px){
+    .container-registro{
+        max-width: 100%;
+        margin: 0 10px;
+    }
+    .input-grupo{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .input-grupo:nth-child(2n){
+        justify-content: space-between;
+    }
+    .observaciones{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .user-info{
+        max-height: 340px;
+        overflow: auto;
+    }
+}

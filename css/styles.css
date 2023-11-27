@@ -1,0 +1,422 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Noto+Serif:wght@300&display=swap');
+
+/* ==================================
+==========HEADER==================
+================================== */
+.main-nav{
+    position: fixed;    /*probe con ( position :sticky , top: 0 ) pero mi nav solo me sigue hasta donde esta mi banner*/
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.logo-img{
+    width: 100px;
+    margin-left: 1rem;
+
+}
+.nav-items{
+    top: 0;
+    position: sticky;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.header-link{
+    padding: 2rem 2rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+
+}
+.login{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    &:hover{
+        color: rgb(139, 36, 36);
+        border-bottom: 1px solid rgb(139, 36, 36);
+    }
+}
+.header-link:hover{
+    color: rgb(139, 36, 36);
+    border-bottom: 1px solid rgb(139, 36, 36);
+}
+.input-check ,.burger-menu {
+    display: none;
+}
+
+
+.fa-regular{
+    font-size: 20px;
+    padding: 1rem;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+}
+.btn-banner{
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(243, 236, 236);
+    background-color: rgb(77, 27, 27);
+    padding: 9px 20px;
+    text-transform: uppercase;
+    border: 1px solid #fdfdfd;
+}
+.btn-banner:hover{
+    background-color: rgb(148, 38, 38);
+}
+@media screen and (width < 1080px){
+
+    .user{
+        flex-grow: 1;
+    }
+    .nav-items{
+        flex-grow: 1;
+    }
+    .nav-items li a{
+        font-size: 15px;
+        padding: 25px;
+    }
+    
+}
+@media screen and (width < 768px){
+
+
+    .nav-items{
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        text-align: center;
+        flex-direction: column;
+        
+    }
+    .input-check , .burger-menu{
+        z-index: 1;
+    }
+    .input-check:checked ~ .nav-items{
+        height: 100vh;
+        padding-top: 100px;
+        background-color: rgba(0, 0, 0, 0.966);
+    }
+    .input-check:checked ~ .nav-items li{
+        display: block;
+    }
+
+    .nav-items li{
+        display: none;
+        padding: 30px 0;
+    }
+    .nav-items li a{
+        padding: 40px 130px;
+        color: rgba(252, 249, 249, 0.842);
+        font-size: 20px;
+        background: transparent;
+    }
+    .nav-items a:hover{
+        border: 0;
+
+    }
+    .burger-menu{
+        cursor: pointer;
+        margin-right: 2rem;
+        display: flex;
+        color: white;
+        font-size: 40px;
+    }
+    .user{
+        display: none;
+    }
+    .main-header{
+        justify-content: space-between;
+    }
+
+}
+
+
+.user-profile-picure {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-inline: .75rem .25rem;
+}
+
+/* ==================================
+==========HEADER  END==================
+================================== */
+
+.banner{
+    height: 100vh;
+    max-height: 1200px;
+    background-position: center;
+    background-image: url(../assets/img/banner\ carne.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.capa{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+.text-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+.text-title{
+    padding: 10px;
+    margin: 10px;
+    font-size:100px;
+    color: rgb(255, 255, 255);
+}
+
+.text-info p {
+    margin: 20px;
+    font-size: 30px;
+    color: rgb(245, 166, 97);
+    font-family: 'Noto Serif', serif;
+}
+
+@media screen and (width < 768px){
+    .text-title{
+        font-size:50px;
+    }
+    .text-info{
+        font-size: 20px;
+    }
+}
+
+/* ==================================
+==========MAIN ==================
+================================== */
+.main-container{
+    background-color: rgba(0, 0, 0, 0.979);
+    padding: 1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.title-card{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.text-main{
+    color: rgb(252, 251, 251);
+    box-shadow: 0 0 6px #812121;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(min( 350px , 100%) , 1fr));
+    gap: 35px;
+    margin: 70px 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 6px #fffefe;
+    transition: all 300ms ease;
+    border-radius: 10px;
+}
+.img-card{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.img-product{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fecha{
+    position: absolute;
+    top: 0px;
+    background-color: rgba(7, 7, 7, 0.658);
+    color: white;
+    padding: 5px 20px;
+}
+
+
+.text-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:transparent;
+    color: white;
+    flex-grow: 1;
+}
+.text-card h1{
+    font-family: 'Oswald', sans-serif;
+    padding: 5px;
+    background-color:rgb(65, 33, 33);
+    color: rgb(202, 132, 70);
+}
+
+.description-card{
+padding: 0.5rem;
+color: rgb(202, 132, 70);
+background-color: transparent;
+flex-grow: 1;
+font-family: 'Noto Serif', serif;
+}
+.card:hover{
+    box-shadow: 0 0 12px 3px #666;
+    transform: scale(1.05);
+    
+}
+
+.precio{
+    color: rgb(202, 132, 70);
+    background-color: rgb(65, 33, 33);
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0;
+    font-family: 'Oswald', sans-serif;
+}
+.precio h2{
+    padding: 1px 10px;
+}
+
+.btn-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+.btn-mas{
+    border: 0;
+    text-decoration: underline;
+    background-color:transparent;
+    color: white;
+    cursor: pointer;
+}
+.btn-comprar{
+    padding: 1rem;
+    background-color: rgb(65, 33, 33);
+    color: rgb(202, 132, 70);
+    border: 0;
+    cursor: pointer;
+}
+@media screen and (width < 768px){
+    .main-container{
+        padding: 0;
+    }
+
+}
+/* ==================================
+==========MAIN  END==================
+================================== */
+
+/* =================================================
+==================features section ================
+================================================= */
+.feature-section{
+    background-color: #f8f8f8;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(65, 33, 33);
+}
+.feature-section .feature{
+    padding: 3rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.feature{
+    flex: 1 1 0%;
+    padding: 5rem 1rem;
+    font-size: 2.5rem;
+}
+ .feature .fa-solid{
+margin-bottom: 1rem;
+}
+.feature:nth-child(even){
+    background-color: rgb(112, 42, 42);
+}
+
+@media screen and (width < 768px){
+    .feature-section{
+        flex-direction: column;
+    }
+    .feature{
+        font-size: 1.5rem;
+    }
+    .feature h4{
+        font-size: 15px;
+    }
+}
+/* =================================================
+==================features section  end================
+================================================= */
+
+
+/* =================================================
+==================footer section================
+================================================= */
+.main-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 20vh;
+    background-color: black;
+    color: white;
+}
+
+.redes , .pagos{
+    font-size: 20px;
+}
+.fa-brands{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.fa-envelope{
+    cursor: pointer;
+}
+
+.datos-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 25px;
+}
+@media screen and (width < 768px){
+    .main-footer{
+        flex-direction: column;
+        height: 40vh;
+    }
+    
+}
+/* =================================================
+==================footer section  end================
+================================================= */

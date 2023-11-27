@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Admin</title>
+    <link rel="stylesheet" href="/css/admin-user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="img-admin">
+
+
+
+    <h1 class="text-admin" >Product Admin</h1>
+
+    <div class="input-container">
+        <input type="text" class="input" id="buscar" placeholder="Buscar por nombre">
+    </div>
+
+    <div class="admin-container">
+        <section class="form-container">
+            <form id="product-form">
+
+                <input type="hidden" name="id">
+
+                <div class="input-group">
+                    <label for="producto">Producto</label>
+                    <input type="text" name="producto" id="producto" required minlength="2" maxlength="80">
+                </div>
+                <div class="input-group">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" name="descripcion" id="descripcion" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="fecha">Fecha Producto</label>
+                    <input type="date" name="fecha" id="fecha" required>
+                </div>
+                <div class="input-group">
+                    <label for="precio">Precio</label>
+                    <input type="number" name="precio" id="precio" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="imageProduct">Url de la imagen</label>
+                    <input type="url" name="imageProduct" id="imageProduct" required>
+                </div>
+
+                <button type="submit" class="btn-form">Agregar Producto</button>
+
+            </form>
+        </section>
+
+        <section class="table-container">
+            <table class="user-table">
+                <thead>
+                    <tr class="table-head">
+                        <th>image</th>
+                        <th>Producto</th>
+                        <th>descripcion</th>
+                        <th>Fecha</th>
+                        <th>precio</th>
+                        <th>acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body-product">
+                    <!-- <tr class="table-row">
+                        <td class="user-image"> <img src="/assets/img/bife-de-chorizo.jpg" alt=""></td>
+
+                        <td>colita</td>
+                        <td>descripcion</td>
+                        <td>fecha</td>
+                        <td>precio</td>
+                        <td>
+                            <button class="action-btn btn-danger">
+                                <i class="fa-solid fa-trash-can"></i>
+                            </button>
+
+                            <button class="action-btn"> 
+                                <i class="fa-solid fa-pen-to-square"></i>
+                            </button>
+                        </td>
+                    </tr> -->
+                </tbody>
+
+            </table>
+        </section>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/formatDate.js"></script>
+    <script src="/js/datainicial.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="/js/product-index.js"></script>
+</body>
+</html>

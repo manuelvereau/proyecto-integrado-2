@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="banner-registro">
+
+            <header class="main-header">
+
+                <nav class="main-nav">
+
+                <a href="../index.html"> <img src="../assets/img/logo.png" class="logo-img" alt="logo"></a>
+
+                <input class="input-check" type="checkbox" id="check-menu">
+                <label class="burger-menu" for="check-menu">
+                <i class="fa-solid fa-bars"></i>
+                </label>
+
+
+                <ul class="nav-items">
+                    <li><a  class="header-link" href="../index.html">Inicio</a></li>
+                    <li><a  class="header-link" href="..#productos">Productos</a></li>
+                    <li><a class="header-link"  href="../pages/registro.html">Registro</a></li>
+                    <li><a  class="header-link" href="../pages/contacto.html">Contacto</a></li>
+                    <li><a  class="header-link" href="../pages/nosotros.html">Nosotros</a></li>
+                </ul>
+
+                <div class="user">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    
+                </div>
+
+                </nav>
+
+            </header>
+
+
+            <main class="main-registro">
+
+                <div class="container-registro">
+
+                    <form action="#">
+
+                        <h1 class="title-form">REGISTRO</h1>
+    
+                        <div class="user-info">
+    
+                            <div class="input-grupo">
+                                <label for="name">Nombre Completo</label>
+                                <input type="text" name="name" id="name" placeholder="Jhon doe"
+                                minlength="5" maxlength="80"
+                                pattern="^[a-zA-Z]+( [a-zA-Z]+)*$">
+                            </div>
+    
+                            <div class="input-grupo">
+                                <label for="email">Correo electronico</label>
+                                <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$ " minlength="5" maxlength="80">
+                            </div>
+    
+                            <div class="input-grupo">
+                                <label for="password">Contraseña</label>
+                                <input type="password" name="password" id="password" placeholder="********" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$">
+                            </div>
+    
+                            <div class="input-grupo">
+                                <label for="password">Repetir Contraseña</label>
+                                <input type="password" name="password" id="password" placeholder="********" required>
+                            </div>
+    
+                            <div class="input-grupo">
+                                <label for="date">Fecha de nacimiento</label>
+                                <input type="date" name="date" required>
+                            </div>
+    
+                            <div class="input-grupo">
+                                <label for="prov">Seleccione su provincia</label>
+                                <input type="text" list="prov" placeholder="Provincia">
+                                <datalist id="prov">
+                                    <option value="buenos_aires">Buenos Aires</option>
+                                    <option value="buenos_aires_capital">Buenos Aires Capital</option>
+                                    <option value="catamarca">Catamarca</option>
+                                    <option value="chaco">Chaco</option>
+                                    <option value="chubut">Chubut</option>
+                                    <option value="cordoba">Cordoba</option>
+                                    <option value="corrientes">Corrientes</option>
+                                    <option value="entre_rios">Entre Rios</option>
+                                    <option value="formosa">Formosa</option>
+                                    <option value="jujuy">Jujuy</option>
+                                    <option value="la_pampa">La Pampa</option>
+                                    <option value="label_rioja">La Rioja</option>
+                                    <option value="mendoza">Mendoza</option>
+                                    <option value="misiones">Misiones</option>
+                                    <option value="neuquen">Neuquen</option>
+                                    <option value="rio_negro">Rio Negro</option>
+                                    <option value="salta">Salta</option>
+                                    <option value="san_juan">San Juan</option>
+                                    <option value="san_luis">San Luis</option>
+                                    <option value="santa_cruz">Santa Cruz</option>
+                                    <option value="santa_fe">Santa Fe</option>
+                                    <option value="santiago_del_estero">Santiago del Estero</option>
+                                    <option value="tierra_del_fuego">Tierra del Fuego</option>
+                                    <option value="tucuman">Tucuman</option>
+                                </datalist>
+                            </div>
+                        </div>
+                        <div class="observaciones">
+                            <label for="message">Observaciones</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Observaciones" minlength="10" maxlength="400"></textarea>
+                        </div>
+                            
+                        <div>
+                            <input class="btn-registro" type="submit" value="REGISTRARSE">
+                        </div>
+                    </form>
+                </div> 
+            </main>
+            
+            <footer class="main-footer">
+                <div class="redes">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="datos-footer">
+                    <p>Eco Carnes , Carnicería.</p>
+                    <p>Lunes a Sábados de 10 a 20 hs. <br>
+                        Domingos de 10 a 16 hs.</p>
+                    <p>WhatsApp +54 9 11 9999-9999</p>
+                </div>
+                <div class="pagos">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                </div>
+            </footer>
+    </section>  
+</body>
+</html>

@@ -1,0 +1,155 @@
+body{
+    background-color: rgb(196, 194, 194);
+}
+.img-admin{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-hexagonal-oscuro-color-degradado_79603-1410.jpg?w=1380&t=st=1701041899~exp=1701042499~hmac=434e48b12206292524fc78a0ef5cc7788e57696c13cb44db191c9e6cb9cd6dca);
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.input-container{
+    justify-content: center;
+    display: flex;
+}
+.text-admin{
+    color: white;
+    text-align: center;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    /* padding: 1rem 1.25rem; */
+
+    .user-profile-picure {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-inline: .75rem .25rem;
+    }
+}
+
+.user-table {
+    width: 100%;
+    display: block;
+    overflow-x: scroll;
+    border-collapse: collapse;
+    color: white;
+    
+    .table-head {
+        background-color: rgb(158, 19, 19);
+        color: rgb(244, 237, 237);
+        padding: 10px;
+    }
+    .table-body {
+        .table-row {
+            
+            td {
+                padding: 10px;
+            }
+        }
+        
+    }
+}
+.table-row:nth-child(even) {
+    background-color: rgba(227, 11, 11, 0.419);
+}
+.table-row{
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+.user-table :is(th, td) {
+    padding: 5px 30px;
+        border: 1px solid rgb(158, 24, 111);
+}
+
+.table-row .user-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.action-btn {
+    background-color: green;
+    color: white;
+    padding: .25rem;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    &:not(:last-child) {
+        margin-right: 5px;
+    }
+
+    &.btn-danger {
+        background-color: crimson;
+    }
+}
+
+.input-container {
+    margin-bottom: .5rem;
+    
+    .input {
+        padding: .375rem .675rem;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        border-bottom: 3px solid crimson;
+    }
+}
+
+.admin-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(580px,1fr));
+    gap: .1rem;
+}
+#user-form  {
+    max-width: 430px;
+    padding: 25px;
+    box-shadow: 0 0 10px #eae4e4;
+    margin-inline: auto;
+}
+#product-form{
+    max-width: 400px;
+    padding: 25px;
+    box-shadow: 0 0 10px #eae4e4;
+    margin-inline: auto;
+}
+.input-group {
+    margin: 0 auto;
+    margin-bottom: .75rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    :is(input, textarea, select) {
+        padding: .375rem .675rem;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        border-bottom: 3px solid rgb(157, 7, 37);
+    }
+}
+
+.btn-form {
+    background-color: crimson;
+    color: white;
+    padding: .5rem .75rem;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+
+
+    &.btn-edit {
+        background-color: green;
+    }
+}
+
+
+.mb {
+    margin-bottom: .75rem;
+    color: white;
+}

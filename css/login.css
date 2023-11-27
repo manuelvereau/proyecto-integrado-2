@@ -1,0 +1,53 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-wrapper {
+    padding: 2rem;
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc9;
+    background: transparent;
+    backdrop-filter: blur(20px);
+
+    .login-title {
+        margin-bottom: 1rem;
+    
+    }
+}
+
+.input-group {
+    margin: 0 auto;
+    margin-bottom: .75rem;
+    display: flex;
+    flex-direction: column;
+    color: rgb(11, 10, 10);
+
+    :is(input, textarea, select) {
+        padding: .375rem .675rem;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+        border-bottom: 3px solid rgb(24, 10, 227) !important;
+    }
+}
+
+.btn-form {
+    background-color: rgb(57, 31, 231) !important ;
+    color: rgb(255, 255, 255);
+    padding: .5rem .75rem;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
+    &:hover{
+        background-color:rgb(32, 17, 133) !important;
+    }
+}
